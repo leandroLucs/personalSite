@@ -33,7 +33,7 @@
         <div class="menu">
           <ul>
             <li><a class="title" href="#home">Home</a></li>
-            <li><a class="title" href="#about-me">About me</a></li>
+            <li><a class="title" href="#about">About me</a></li>
             <li><a class="title" href="#portfolio">Portfolio</a></li>
             <li><a class="title" href="#blog">Blog</a></li>
             <li><a class="title" href="#contact">Contact</a></li>
@@ -52,7 +52,7 @@
           </div>
           <div class="scroll-down">
             <span>Scroll down</span>
-            <img src="assets\images\scroll-down.png " />
+            <i class="icon-circle-down"></i>
           </div>
         </div>
       </section>
@@ -74,7 +74,7 @@
 
             <div class="abstract">
               <h2 class="subtitle">Abstract</h2>
-              <p>
+              <p class="paragraph-1">
                 My first contact with programming was during the IT course, when
                 a learnt the programming logic and then some programming
                 languages (I kept my focus in Java and Javascript). In adittion
@@ -89,7 +89,7 @@
                 and dealing with costumers.
               </p>
               <h2 class="subtitle">Actual days</h2>
-              <p>
+              <p class="paragraph-2">
                 Actually I have focus in web development, learning and using my
                 knowledges developing applications with technologies like React
                 and Node, besides, databases. Acessing the section Portfolio,
@@ -114,40 +114,58 @@
             <div class="swiper-wrapper">
               <div class="projects swiper-slide">
                 <div class="project">
-                  <a href="#">
-                    <img src="/assets/images/imgTeste.jpg" alt="" />
+                  <a
+                    href="https://leandrolucs.github.io/templateWeb/#home"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/images/beautySaloon.PNG"
+                      alt="Imagem do site BeautySaloon"
+                    />
                     <span class="text">
-                      Mensagem que deve aparece com o mouse em cima.
+                      Protótipo de um site para salão de beleza utilizando
+                      HTML5, CSS3 e Javascript.
                     </span>
                   </a>
-                  <a href="https://github.com" target="_blank">
-                    <img class="icon" src="/assets/images/github.svg" alt="" />
+                  <a
+                    href="https://github.com/leandroLucs/templateWeb"
+                    target="_blank"
+                  >
+                    <i class="icon-github"></i>
                   </a>
                 </div>
               </div>
               <div class="projects swiper-slide">
                 <div class="project">
-                  <a href="#">
-                    <img src="/assets/images/imgTeste.jpg" alt="" />
+                  <a href="https://letmeask-b0622.web.app/" target="_blank">
+                    <img
+                      src="/assets/images/letMeAsk.PNG"
+                      alt="Imagem do site letMeAsk"
+                    />
                     <span class="text">
-                      Mensagem que deve aparece com o mouse em cima.
+                      Website para criação de salas Q&A ao vivo, usando a
+                      biblioteca React do Javascript e o Realtime Database do
+                      Firebase.
                     </span>
                   </a>
-                  <a href="https://github.com" target="_blank">
-                    <img class="icon" src="/assets/images/github.svg" alt="" />
+                  <a
+                    href="https://github.com/leandroLucs/letMeAsk"
+                    target="_blank"
+                  >
+                    <i class="icon-github"></i>
                   </a>
                 </div>
               </div>
               <div class="projects swiper-slide">
                 <div class="project">
-                  <a href="#">
+                  <a href="#" target="_blank">
                     <img src="/assets/images/imgTeste.jpg" alt="" />
                     <span class="text">
                       Mensagem que deve aparece com o mouse em cima.
                     </span>
                   </a>
                   <a href="https://github.com" target="_blank">
-                    <img class="icon" src="/assets/images/github.svg" alt="" />
+                    <i class="icon-github"></i>
                   </a>
                 </div>
               </div>
@@ -172,7 +190,7 @@
             <div class="links">
               <ul>
                 <li><i class="icon-phone"></i> +55 4898811-4917</li>
-                <li><i class="icon-mail"></i> leandrosantos182@gmail.com</li>
+                <li><i class="icon-envelop"></i> leandrosantos182@gmail.com</li>
               </ul>
             </div>
             <form action="">
@@ -181,9 +199,7 @@
                 name=""
                 class="message"
                 placeholder="Write your message here"
-              >
-asd</textarea
-              >
+              ></textarea>
               <button>SUBMIT</button>
             </form>
           </div>
@@ -194,25 +210,31 @@ asd</textarea
     <footer class="section">
       <div class="container grid">
         <div class="brand">
-          <a class="logo logo-alt" href="#home">Airy<span>Dev</span></a>
+          <a class="logo" href="#home">Airy<span>Dev</span></a>
           <p>©2021 AiryDev.</p>
           <p>Todos os direitos reservados.</p>
         </div>
         <div class="social grid">
-          <a href="https://instagram.com" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/leandro-lucas-dos-santos-780732214/"
+            target="_blank"
+          >
+            <i class="icon-linkedin"></i>
+          </a>
+          <a href="https://github.com/leandroLucs" target="_blank">
+            <i class="icon-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/leandrolucas.santos/"
+            target="_blank"
+          >
             <i class="icon-instagram"></i>
-          </a>
-          <a href="https://facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="https://youtube.com" target="_blank">
-            <i class="icon-youtube"></i>
           </a>
         </div>
       </div>
     </footer>
 
-    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    <a href="#" class="back-to-top"><i class="icon-arrow-up2"></i></a>
 
     <!--SWIPER-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

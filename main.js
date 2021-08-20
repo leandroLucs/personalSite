@@ -36,11 +36,11 @@ const scrollReveal = ScrollReveal({
   reset: true
 })
 scrollReveal.reveal(
-  `#home .image, #home .text,
-  #about .image, #about .text,
-  #services header, #services .card,
-  #testimonials header, #testimonials .testimonials,
-  #contact .text, #contact .links
+  `#home .text, #home .scroll-down,
+  #about .title, #about .bio, #about .paragraph-1, #about .paragraph-2,
+  #portfolio .text, .swiper-container,
+  #blog header, #testimonials .testimonials,
+  #contact .text, #contact .links, #contact form,
   footer .brand, footer .social
   `,
   { interval: 100 }

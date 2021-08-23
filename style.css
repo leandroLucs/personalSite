@@ -405,7 +405,9 @@ nav .menu ul {
   width: 490px;
 }
 
-.contact button {
+.contact .button {
+  width: auto;
+  height: auto;
   background: #282828;
   color: var(--text-color);
   font: var(--font);
@@ -417,7 +419,7 @@ nav .menu ul {
   transition: 0.3s;
 }
 
-.contact button:hover {
+.contact .button:hover {
   background: #1b1b1b;
 }
 /*---------------- FOOTER ----------------------*/
@@ -484,7 +486,4 @@ footer .social a:hover {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
-}
-
-@media (min-width: 1200px) {
 }

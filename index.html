@@ -35,7 +35,6 @@
             <li><a class="title" href="#home">Home</a></li>
             <li><a class="title" href="#about">About me</a></li>
             <li><a class="title" href="#portfolio">Portfolio</a></li>
-            <li><a class="title" href="#blog">Blog</a></li>
             <li><a class="title" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -156,30 +155,12 @@
                   </a>
                 </div>
               </div>
-              <div class="projects swiper-slide">
-                <div class="project">
-                  <a href="#" target="_blank">
-                    <img src="/assets/images/imgTeste.jpg" alt="" />
-                    <span class="text">
-                      Mensagem que deve aparece com o mouse em cima.
-                    </span>
-                  </a>
-                  <a href="https://github.com" target="_blank">
-                    <i class="icon-github"></i>
-                  </a>
-                </div>
-              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
       <div class="divider-1"></div>
-
-      <section class="section" id="blog">
-        <div class="container grid"></div>
-      </section>
-      <div class="divider-2"></div>
 
       <section class="section" id="contact">
         <div class="container">
@@ -193,19 +174,23 @@
                 <li><i class="icon-envelop"></i> leandrosantos182@gmail.com</li>
               </ul>
             </div>
-            <form action="">
-              <input type="text" placeholder="Your email" />
+            <form
+              method="POST"
+              action="https://formsubmit.co/leandrosantos182@gmail.com"
+            >
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="E-mail" required />
               <textarea
-                name=""
+                name="message"
                 class="message"
                 placeholder="Write your message here"
               ></textarea>
-              <button>SUBMIT</button>
+              <input type="submit" value="SUBMIT" class="button" />
             </form>
           </div>
         </div>
       </section>
-      <div class="divider-1"></div>
+      <div class="divider-2"></div>
     </main>
     <footer class="section">
       <div class="container grid">

@@ -47,7 +47,7 @@ try {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sendEmail</title>
   <link rel="stylesheet" href="style.css" />
-  <style type="text/css">
+  <!--<style type="text/css">
     body {
       padding-top: 2rem;
       display: flex;
@@ -87,7 +87,7 @@ try {
     .button:hover {
       background: #1b1b1b;
     }
-  </style>
+  </style>-->
 </head>
 <body>
   <div class="container">

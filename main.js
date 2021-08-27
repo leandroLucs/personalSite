@@ -95,3 +95,47 @@ window.addEventListener('scroll', function () {
   backToTop()
   currentSection()
 })
+
+/*Mudar Tema*/
+function changeColor(element, newColor) {
+  document.body.style.setProperty(element, newColor)
+}
+
+const input = document.querySelector('.button')
+const lightBtn = document.querySelector('.light')
+lightBtn.addEventListener('click', function () {
+  changeColor('--base-color', '#505050')
+  changeColor('--base-color-second', '#E0E0E0')
+  changeColor('--base-color-alt', '#E0E0E0')
+  changeColor('--title-color', 'black')
+  changeColor('--subtitle-color', '#111111')
+  changeColor('--text-color', '#171717')
+  changeColor('--text-color-light', '#282828')
+  changeColor('--body-color', '#F0F0F0')
+  input.style.backgroundColor = '#E0E0E0'
+  input.addEventListener('mouseover', function () {
+    input.style.backgroundColor = '#a1a1a1'
+  })
+  input.addEventListener('mouseout', function () {
+    input.style.backgroundColor = '#E0E0E0'
+  })
+})
+
+const darkBtn = document.querySelector('.dark')
+darkBtn.addEventListener('click', function () {
+  changeColor('--base-color', '#979797')
+  changeColor('--base-color-second', '#282828')
+  changeColor('--base-color-alt', '#282828')
+  changeColor('--title-color', '#e2e2e2')
+  changeColor('--subtitle-color', '#dfdfdf')
+  changeColor('--text-color', '#cdcdcd')
+  changeColor('--text-color-light', 'hsl(0 0% 98%)')
+  changeColor('--body-color', '#222222')
+  input.style.backgroundColor = '#282828'
+  input.addEventListener('mouseover', function () {
+    input.style.backgroundColor = '#1b1b1b'
+  })
+  input.addEventListener('mouseout', function () {
+    input.style.backgroundColor = '#282828'
+  })
+})

@@ -70,19 +70,19 @@ main {
 }
 
 .divider-1 {
-  height: 1px;
+  height: 0.0625rem;
   background: linear-gradient(270deg, var(--text-color), black);
 }
 
 .divider-2 {
-  height: 1px;
+  height: 0.0625rem;
   background: linear-gradient(270deg, black, var(--title-color));
 }
 
 /*---------------- LAYOUT----------------------*/
 .container {
   height: auto;
-  max-width: 1226px;
+  max-width: 76.625rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -117,6 +117,7 @@ main {
 }
 
 #header {
+  padding: 0 1rem;
   height: var(--header-height);
   margin-bottom: 2rem;
   display: flex;
@@ -129,7 +130,7 @@ main {
 }
 
 #header.scroll {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0rem 0rem 0.75rem rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
 
@@ -170,7 +171,7 @@ nav ul li a.active {
 nav ul li a:after {
   content: '';
   width: 0%;
-  height: 2px;
+  height: 0.125rem;
   background: var(--base-color);
   position: absolute;
   left: 0;
@@ -206,6 +207,44 @@ nav .menu ul {
   gap: 2rem;
 }
 
+nav .menu .theme .title {
+  display: none;
+}
+
+nav .menu i {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  left: 1275px;
+}
+
+nav .menu i ul {
+  cursor: pointer;
+  font: 300 0.8rem var(--font);
+  position: relative;
+  display: none;
+}
+
+nav .menu i:hover ul {
+  display: flex;
+  flex-direction: column;
+  left: -10px;
+  top: -13px;
+  text-align: justify;
+  padding: 0 1rem;
+  gap: 0.5rem;
+}
+
+i li:hover {
+  color: var(--base-color);
+}
+
+.toggle {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
 /*---------------- HOME ----------------------*/
 
 #home {
@@ -215,7 +254,7 @@ nav .menu ul {
 #home .container {
   display: flex;
   justify-content: left;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -228,15 +267,16 @@ nav .menu ul {
 }
 
 #home .title {
-  margin-bottom: 15.125rem;
+  margin-bottom: 14rem;
 }
 
 #home .container .scroll-down {
-  margin-left: 6.5rem;
+  width: auto;
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin-top: 27.5rem;
 }
 
 #home .container .scroll-down i {
@@ -290,8 +330,8 @@ nav .menu ul {
 #portfolio img {
   border-radius: 1%;
   position: relative;
-  left: -11px;
-  bottom: 9px;
+  left: -0.6875rem;
+  bottom: 0.5625rem;
   width: 21.0625rem;
   height: 21.1875rem;
 }
@@ -299,7 +339,7 @@ nav .menu ul {
 #portfolio .project span.text {
   max-width: none;
   word-break: break-word;
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 #portfolio i {
@@ -313,7 +353,7 @@ nav .menu ul {
 }
 
 #portfolio i:hover {
-  transform: translateY(-8px);
+  transform: translateY(-0.5rem);
 }
 
 #portfolio .project span {
@@ -321,8 +361,8 @@ nav .menu ul {
   color: var(--text-color);
   padding: 0.625rem;
   position: absolute;
-  bottom: -1px;
-  left: -1px;
+  bottom: -0.0625rem;
+  left: -0.0625rem;
   opacity: 0;
 
   width: 21.0625rem;
@@ -340,18 +380,18 @@ nav .menu ul {
 
 /*swiper*/
 .swiper-slide {
-  max-width: 420px;
-  margin-right: 50px;
+  max-width: 26.25rem;
+  margin-right: 3.125rem;
   height: auto;
   padding: 4rem 1rem;
 }
 
 .swiper-container {
   overflow: hidden;
-  background: #282828;
+  background: var(--base-color-second);
   padding-right: 10rem;
-  padding-left: 7px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+  padding-left: 0.4375rem;
+  box-shadow: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.6);
 }
 
 .swiper-pagination-bullet-active {
@@ -359,18 +399,17 @@ nav .menu ul {
 }
 
 /*---------------- CONTACT ---------------------*/
-#contact {
-  display: flex;
-  align-items: center;
-}
 .contact {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid #cdcdcd;
-  width: 1024px;
-  height: 545px;
+  border: 0.0625rem solid #cdcdcd;
+  width: 100%;
+}
+
+.contact .title {
+  margin-top: 1.6875rem;
 }
 
 .contact .links ul {
@@ -381,7 +420,7 @@ nav .menu ul {
 }
 
 .contact form {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,33 +428,34 @@ nav .menu ul {
 }
 
 .contact form input {
-  padding: 10px;
+  padding: 0.625rem;
   font: var(--font);
-  margin-top: 10px;
-  height: 45px;
-  width: 490px;
+  margin-top: 0.625rem;
+  height: 2.8125rem;
+  width: 30.625rem;
 }
 
 .contact form .message {
-  padding: 10px;
+  padding: 0.625rem;
   font: var(--font);
   word-break: break-word;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   resize: none;
   outline: none;
-  height: 105px;
-  width: 490px;
+  height: 6.5625rem;
+  width: 30.625rem;
 }
 
 .contact .button {
   width: auto;
   height: auto;
-  background: #282828;
+  background: var(--base-color-second);
   color: var(--text-color);
   font: var(--font);
-  border: 1px solid #404040;
+  border: 0.0625rem solid #404040;
   padding: 0.5rem 1rem;
-  margin-top: 27px;
+  margin-bottom: 1.6875rem;
+  margin-top: 1.6875rem;
   cursor: pointer;
   border-radius: 5%;
   transition: 0.3s;
@@ -466,7 +506,7 @@ footer .social {
 }
 
 footer .social a:hover {
-  transform: translateY(-8px);
+  transform: translateY(-0.5rem);
 }
 /* back-to-top */
 .back-to-top {
@@ -488,4 +528,215 @@ footer .social a:hover {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 1276px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  nav ul li a {
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: var(--base-color);
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav ul li a:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--base-color);
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    transition: width 0.3s;
+  }
+
+  nav ul li a:hover::after,
+  nav ul li a.active::after {
+    width: 100%;
+  }
+
+  nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+  }
+
+  nav .menu ul {
+    display: none;
+  }
+
+  nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    background: var(--body-color);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+  }
+
+  nav.show .menu ul {
+    display: grid;
+  }
+
+  nav.show ul.grid {
+    gap: 4rem;
+  }
+
+  nav .icon-menu {
+    display: visible;
+  }
+
+  nav .icon-close {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+    transition: 0.2s;
+  }
+
+  nav .menu .theme {
+    background: var(--base-color-alt);
+    border-radius: 5%;
+    font-size: 5px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav .menu .theme .title {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  nav .menu i {
+    visibility: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  nav .menu i:hover ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    visibility: visible;
+    text-align: justify;
+
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav .menu i ul {
+    /*visibility: hidden;*/
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    visibility: visible;
+    text-align: justify;
+
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  i li:active {
+    color: var(--base-color);
+  }
+
+  .toggle {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    color: var(--base-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*toggle menu*/
+  .toggle {
+    color: var(--base-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  nav .icon-close {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+    transition: 0.2s;
+  }
+
+  nav.show div.icon-close {
+    visibility: visible;
+    opacity: 1;
+    top: 1.5rem;
+  }
+}
+
+@media (max-width: 642px) {
+  .contact form input {
+    height: 2rem;
+    width: 23rem;
+  }
+
+  .contact form .message {
+    width: 23rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact form input {
+    height: 2rem;
+    width: 16rem;
+  }
+
+  .contact form .message {
+    width: 16rem;
+  }
 }

@@ -7,7 +7,7 @@
     <title>AiryDev</title>
 
     <!--ICONES-->
-    <link rel="stylesheet" href="assets/fonts/style.css" />
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
 
     <!--SWIPER-->
     <link
@@ -32,12 +32,23 @@
         <a class="logo" href="#">Airy<span>Dev</span></a>
         <div class="menu">
           <ul>
-            <li><a class="title" href="#home">Home</a></li>
-            <li><a class="title" href="#about">About me</a></li>
-            <li><a class="title" href="#portfolio">Portfolio</a></li>
-            <li><a class="title" href="#contact">Contact</a></li>
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#portfolio">Portifólio</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+            <div class="theme">
+              <span class="title">Tema</span>
+              <i class="icon-droplet">
+                <ul class="tema">
+                  <li class="light">Light</li>
+                  <li class="dark">Dark</li>
+                </ul>
+              </i>
+            </div>
           </ul>
         </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -46,7 +57,7 @@
         <div class="container">
           <div class="text">
             <h1 class="title presentation">
-              Leandro, <br />Full stack web developer
+              Leandro, <br />Desenvolvedor web full stack
             </h1>
           </div>
           <div class="scroll-down">
@@ -59,40 +70,41 @@
 
       <section class="section" id="about">
         <div class="container">
-          <h1 class="title">About me</h1>
+          <h1 class="title">Sobre Mim</h1>
           <div class="text">
             <div class="bio">
-              <h2 class="subtitle">Hello, I'm Leandro Lucas dos Santos</h2>
+              <h2 class="subtitle">Olá, eu sou Leandro Lucas dos Santos</h2>
               <p>
-                A brazillian full stack web developer, certificate in IT from
-                Instituto Federal Catarinense (IFC), graduating in Computer
-                Science from Universidade Federal do Estado de Santa Catarina
-                (UFSC)
+                Desenvolvedor web full stack, técnico em informática pelo
+                Instituto Federal Catarinense (IFC), graduando em Ciência da
+                Computação pela Universidade Federal de Santa Catarina (UFSC)
               </p>
             </div>
 
             <div class="abstract">
-              <h2 class="subtitle">Abstract</h2>
+              <h2 class="subtitle">Resumo</h2>
               <p class="paragraph-1">
-                My first contact with programming was during the IT course, when
-                a learnt the programming logic and then some programming
-                languages (I kept my focus in Java and Javascript). In adittion
-                to that, I had contact with several others importants knowledges
-                in the construction and planning of a project, like the use of
-                databases, SQL language, the use of agile methodologies and
-                software engineering. In this period I developed my first apps,
-                between them, the most relevant was for my IT course final
-                paper. An automation system for irrigation and fertilizing of
-                strawberry plantations, denominated StrawberryApp. Developed in
-                Java and using MySQL, it was my first time meeting a real demand
-                and dealing with costumers.
+                Meu primeiro contato com programação foi durante o curso
+                técnico, quando aprendi a lógica de programação e,
+                posteriormente, algumas linguagens de programação (mantive meu
+                foco em Java e Javascript). Além disso, tive contato com
+                diversos outros conhecimentos importantes para planejamento e
+                construção de um projeto, como o uso de banco de dados,
+                linguagem SQL, uso de metodologias àgeis e engenharia de
+                software. Nesse período desenvolvi meus primeiros aplicativos,
+                entre eles, o mais relevante foi meu Trabalho de Conclusão de
+                Curso. Um sistema de automatização da irrigação e adubação de
+                plantações de morango denominado StrawberryApp. Desenvolvido em
+                Java e utilizando, além de sensores e um Arduino, o MySQL, esta
+                foi minha primeira vez atendendo uma demanada real e lidando com
+                clientes.
               </p>
-              <h2 class="subtitle">Actual days</h2>
+              <h2 class="subtitle">Dias atuais</h2>
               <p class="paragraph-2">
-                Actually I have focus in web development, learning and using my
-                knowledges developing applications with technologies like React
-                and Node, besides, databases. Acessing the section Portfolio,
-                you have acess to some of this applications.
+                Atualmente eu matenho foco no desenvolvimento web, aprimorando e
+                utlizando meus conhecimentos no desenvolvimento de aplicações
+                com tecnologias como o React, Node, além de, banco de dados. Na
+                seção Portifólio, você tem acesso a algumas dessas aplicações.
               </p>
             </div>
           </div>
@@ -105,8 +117,9 @@
           <div class="text">
             <h1 class="title">Portfolio</h1>
             <p>
-              Here are somes of my works, click on the github icon to go to the
-              project's github or in the link to visit the website
+              Aqui estão alguns dos meus trabalhos, clique no ícone do github
+              para acessar o repositório do projeto or na imagem para acessar o
+              website
             </p>
           </div>
           <div class="projects swiper-container">
@@ -166,12 +179,12 @@
         <div class="container">
           <div class="contact">
             <div class="text">
-              <h1 clas s="title">Contact Me</h1>
+              <h1 class="title">Entre em Contato</h1>
             </div>
             <div class="links">
               <ul>
                 <li><i class="icon-phone"></i> +55 4898811-4917</li>
-                <li><i class="icon-envelop"></i> leandrosantos182@gmail.com</li>
+                <li><i class="icon-envelop"></i> contato@airydev.com.br</li>
               </ul>
             </div>
             <form method="POST" action="send-email.php">
@@ -182,7 +195,7 @@
                 class="message"
                 placeholder="Write your message here"
               ></textarea>
-              <input type="submit" value="SUBMIT" class="button" />
+              <input type="submit" value="ENVIAR" class="button" />
             </form>
           </div>
         </div>

@@ -14,20 +14,21 @@ $dotenv =  Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
 $dotenv->load();
 try {
   $mail->IsSMTP();
-  $mail->Host = "smtp.gmail.com";
-  $mail->Port = "587";
+  $mail->Host = "ssl://smtp.titan.email";
+  $mail->Port = "465";
   $mail->SMTPSecure = "tls";
   $mail->SMTPAuth = "true";
-  $mail->Username = "leandrosantos182@gmail.com";
+  $mail->Username = "admin@airydev.com.br";
   $mail->Password = getenv("EMAIL_PASSWORD"); 
 
   //Mensagem
   $mail->setFrom($mail->Username, "Leandro Santos");
-  $mail->addAddress("leandrosantos182@gmail.com");
+  $mail->addAddress("contato@airydev.com.br");
   
   //Conteúdo
-  $message_content = "Você recebeu uma mensagem de $name ($email):<br><br>Mensagem:<br>$message";
-  $message_non_html_content = "Você recebeu uma mensagem de $name ($email)\n\nMensagem: $message";
+  $mail->IsHTML(true);
+  $message_content = utf8_decode("Você recebeu uma mensagem de $name ($email):<br><br>Mensagem:<br>$message");
+  $message_non_html_content = utf8_decode("Você recebeu uma mensagem de $name ($email)\n\nMensagem: $message");
   $mail->Subject = "Fale Conosco";
   $mail->Body = $message_content;
   $mail->AltBody = $message_non_html_content;
@@ -37,7 +38,7 @@ try {
   echo("Message has been sent");
   
 } catch (Exception $e) {
-  echo("Message couldn't be sent. Mailer Error: ($mail->ErrorInfo)");
+  echo("Message couldn't be sent.");
 }
 ?>
 <!DOCTYPE html>
@@ -47,7 +48,7 @@ try {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sendEmail</title>
   <link rel="stylesheet" href="style.css" />
-  <!--<style type="text/css">
+  <style type="text/css">
     body {
       padding-top: 2rem;
       display: flex;
@@ -57,7 +58,8 @@ try {
     }
 
     .container {
-      margin-top: 10rem;
+      position: absolute;
+      top: 10;
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -66,7 +68,7 @@ try {
       border: 1px solid #cdcdcd;
       background: black;
       opacity: 0.4;
-      position: absolute;
+      
     }
 
     .button {
@@ -84,14 +86,18 @@ try {
       transition: 0.3s;
     }
 
+    span {
+      height: auto;
+    }
+
     .button:hover {
       background: #1b1b1b;
     }
-  </style>-->
+  </style>
 </head>
 <body>
   <div class="container">
-    <a class="button" href="index.html"><br>Return to site</a>
+    <a class="button" href="index.html"><br><span>Return to site</span></a>
   </div>
 </body>
 

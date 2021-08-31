@@ -48,6 +48,6 @@ scrollReveal.reveal(
 )
 ```
 
-### ◼️ Além disso, apresenta responsividade os diversos dispositivos
+### ◼️ Além disso, apresenta responsividade para os diversos dispositivos
 
 ![image](https://user-images.githubusercontent.com/48057126/131559653-3b12b7f1-46bf-4842-a236-cf76ecad0665.png)

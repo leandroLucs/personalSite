@@ -392,8 +392,19 @@ i li:hover {
   box-shadow: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.6);
 }
 
+.swiper-pagination {
+  position: relative;
+}
+
 .swiper-pagination-bullet-active {
   background: var(--base-color);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 50px;
 }
 
 /*---------------- CONTACT ---------------------*/

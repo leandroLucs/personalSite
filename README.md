@@ -13,7 +13,7 @@
 
 
 
-## 💻 Objetivo 💻
+## 💻 Objetivo
 Este é um website desenvolvido como perfil profissional. Nele é possível ver um resumo profissional meu, bem como ter acesso a alguns dos meus projetos e informações de contato.
 
 ## 📚 Features

@@ -13,7 +13,7 @@ for (const link of links) {
   })
 } /*esconder menu*/
 
-/*Biblioteca swiper para slider, carousel no TESTIMONIALS*/
+/*Biblioteca swiper para slider, carousel no Portfolio*/
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   pagination: {
@@ -22,7 +22,11 @@ const swiper = new Swiper('.swiper-container', {
   mousewheel: true,
   keyboard: true,
   breakpoints: {
-    767: {
+    1167: {
+      slidesPerView: 3,
+      setWrapperSize: true
+    },
+    715: {
       slidesPerView: 2,
       setWrapperSize: true
     }
@@ -38,10 +42,8 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(
   `#home .text, #home .scroll-down,
   #about .title, #about .bio, #about .paragraph-1, #about .paragraph-2,
-  #portfolio .text, .swiper-container,
-  #blog header, #testimonials .testimonials,
-  #contact .text, #contact .links, #contact form,
-  footer .brand, footer .social
+  #portfolio .text,
+  #contact .text, #contact .links, #contact form
   `,
   { interval: 100 }
 )

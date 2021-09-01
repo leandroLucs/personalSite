@@ -48,6 +48,9 @@ scrollReveal.reveal(
   { interval: 100 }
 )
 ```
+### ◼️ Envio de E-mail com o PHPMailer
+![image](https://user-images.githubusercontent.com/48057126/131681864-b294b329-9838-469e-ae3a-3e7152c63d6b.png)
+
 
 ### ◼️ Além disso, apresenta responsividade para os diversos dispositivos
 

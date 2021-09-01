@@ -22,7 +22,7 @@ Este é um website desenvolvido como perfil profissional. Nele é possível ver 
 
 ####
 
-### ◼️ Biblioteca Swiper para exibição dos meus trabalhos em Portfolio
+### ◼️ Biblioteca Swiper para exibição dos meus trabalhos em Portifólio
 
 ![image](https://user-images.githubusercontent.com/48057126/131558013-20584811-ddc7-459b-b374-a4bd641dc480.png)
 
